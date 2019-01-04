@@ -1,0 +1,288 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Georgia;
+}
+
+ul {
+    list-style: none;
+}
+
+button {cursor: pointer;}
+
+.middle-container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+/* 
+*************************
+NAVBAR
+************************ */
+.navbar {
+    display: flex;
+    width: 100%;
+    background-color: #0076bd;
+    color: white;
+    font-size: 0.8rem;
+}
+
+.navbar > ul > li {
+    margin: 0 1%;
+}
+
+.right-nav, .left-nav {
+    margin: 0 auto;
+    font-size: smaller;
+    flex-basis: 32%;
+}
+
+.right-nav {
+    display: flex;
+}
+
+.left-nav {
+    display: flex;
+}
+
+/* *************************
+SEARCH
+************************ */
+
+.search-container {
+    margin: 1% 0;
+    display: flex;
+}
+
+.logo {
+    width: 26%;
+    height: 75px;
+}
+
+.cart-img {
+    width: 5%;
+    width: 7%;
+    height: 51px;
+    margin: 0 auto;
+}
+
+.search-form {
+    margin: 0 auto;
+    display: inline;
+}
+.search-btn {
+    color: white;
+    background-color: orange;
+    padding: 1.5%;
+}
+
+/* *************************
+PRODUCT NAV
+************************ */
+.product-list {
+    display: flex;
+    justify-content: space-around;
+    background-color: #0076bd;
+}
+
+.product-list-arrow {
+    width: 8%;
+}
+
+.product-list > li {
+    color: white;
+    cursor: pointer;
+    font-size: smaller;
+}
+
+
+/* *************************
+PRODUCT DETAIL
+************************ */
+
+.product-detail {
+    display: flex;
+    border: 1px solid gray;
+}
+
+.product-detail-container {
+    text-align: center;
+    width: 60%;
+    border: 1px solid gray;
+}
+.product-detail-stars {
+    width: 12%;
+}
+.thumbnail-row {
+    text-align: center;
+}
+
+.thumbnail-row > img {
+    width: 16%;
+}
+
+/* ********************
+CART
+**************** */
+
+.cart-container {
+    width: 40%;
+    background-color: lightgray;
+    text-align: center;
+    border: 1px solid gray;
+}
+
+.cart-logo {
+    width: 100%;
+}
+
+.cart-price {
+    color: olivedrab;
+    font-family: Verdana;
+    font-size: 1.7rem;
+}
+
+.cart-select-container {
+    text-align: left;
+    margin-left: 4%;
+}
+
+.cart-select-container > * {
+    margin: 2% 0;
+}
+
+.cart-select-container > select {
+    padding: 2%;
+    font-family: Verdana;
+}
+
+.cart-text {
+    color: navy;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.cart-link {
+    color: blue;
+    cursor: pointer;
+    margin: 4% 0;
+    display: inline-block;
+}
+.cart-btn {
+    color: white;
+    text-align: center;
+    background-color: green;
+    padding: 2%;
+}
+
+
+/* *************************
+ITEM DESC AND REVIEWS
+************************ */
+.desc-container {
+    margin-top: 1%;
+}
+
+.desc-container > li:not(.desc-item-header) {
+    font-size: small;
+}
+
+.desc-item-header {
+    color: white;
+    font-style: italic;
+    font-size: 1.2rem;
+    background-color: #0076bd;
+    list-style: none;
+    width: 28%;
+    border-radius: 0 40px 40px 0;
+}
+
+.desc-item, .review-item {
+    text-align: left;
+}
+
+.desc-item:not(.desc-item-header), .review-item:not(.desc-item-header) {
+    margin-left: 3%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+
+.review-item {list-style: none;}
+
+.review-quote {
+    font-style: italic;
+}
+/* *************************
+FOOTER
+************************ */
+
+.footer {
+    background-color: #0076bd;
+    color: white;
+}
+.footer-top {
+    text-align: center;
+    background-color: green;
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+}
+
+.footer-top-title:not(.footer-top-text) {
+    letter-spacing: 0.1rem;
+}
+
+.footer-top-text {
+    font-weight: bold;
+}
+
+.footer-middle {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.footer-middle-list {
+    flex-basis: 20%;
+    margin: 0 auto;
+}
+
+.footer-middle-list > li:not(:nth-child(1)) {
+    font-size: 0.8rem;
+}
+
+.footer-end {
+    margin-top: 1%;
+}
+
+.footer-list-title { font-size: 1.2rem;}
+
+.footer-end-text {
+    text-align: center;
+    letter-spacing: 0.1rem;
+}
+
+.signup-btn {
+    background-color: orange;
+    color: white;
+}
+
+
+
+/* ********************
+MOBILE
+******************** */
+
+@media screen and (max-width: 960px) {
+    
+    .large-shoe-img {
+        width: 50%;
+    }
+
+    select {
+        font-size: xx-small;
+    }
+
+    
+}
